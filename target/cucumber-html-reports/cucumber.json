@@ -1,0 +1,424 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8818548838,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on Company page",
+            "match": {
+              "location": "CompanySD.setCompanyPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 413333,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 6573853203,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.before()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Verify that I can select a company name",
+        "description": "",
+        "id": "company-feature;verify-that-i-can-select-a-company-name",
+        "after": [
+          {
+            "result": {
+              "duration": 580684,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.after(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 322673673,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3777265486,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I select a company name",
+            "match": {
+              "location": "CompanySD.selectACompany()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5344612022,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I verify that company selection is enabled",
+            "match": {
+              "location": "CompanySD.verifyEnableCompanySelection()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@company"
+          }
+        ]
+      }
+    ],
+    "name": "Company Feature",
+    "description": "",
+    "id": "company-feature",
+    "keyword": "Feature",
+    "uri": "Company.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@web"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 285809,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 2720513111,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.before()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Verify results that is selected a loan status",
+        "description": "",
+        "id": "loanmanager-feature;verify-results-that-is-selected-a-loan-status",
+        "after": [
+          {
+            "result": {
+              "duration": 180423,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.after(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 300472088,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11976841706,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I login to the Loan manager page",
+            "match": {
+              "location": "LoanManagerSD.setLoanManagerPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 14827693837,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I verify \"Loans\",Profile picture,\"New Loan\",\"Reports\",\"Loan Status\" is enabled",
+            "match": {
+              "location": "LoanManagerSD.enableLoansProfilepictureNewloanReportLoanStatus()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10135899632,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I verify \"Loans\",Profile picture,\"New Loan\",\"Reports\",\"Loan Status\" is displayed",
+            "match": {
+              "location": "LoanManagerSD.displayedLoansProfilepictureNewloanReportLoanStatus()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7699369776,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I select \"Approved\" as the loan status",
+            "match": {
+              "location": "LoanManagerSD.approvedLoanStatus()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2036119083,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I validate amount of Approved loan status is 59",
+            "match": {
+              "location": "LoanManagerSD.validateAmount()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 24447905813,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "All results that loans displayed are with status approved",
+            "match": {
+              "location": "LoanManagerSD.check()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@loanManager"
+          }
+        ]
+      }
+    ],
+    "name": "LoanManager feature",
+    "description": "",
+    "id": "loanmanager-feature",
+    "keyword": "Feature",
+    "uri": "LoanManager.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@web"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6961919,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on login page",
+            "match": {
+              "location": "LoginSD.setLoginPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 154522,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 2745458444,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.before()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Verify valid login to LoadPro",
+        "description": "",
+        "id": "login-feature;verify-valid-login-to-loadpro",
+        "after": [
+          {
+            "result": {
+              "duration": 183588,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.after(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 303848976,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2302521638,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter tomasg+betaagent2@simnang.com  into username field on the login page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "tomasg+betaagent2@simnang.com ",
+                  "offset": 8
+                },
+                {
+                  "val": "username",
+                  "offset": 44
+                }
+              ],
+              "location": "LoginSD.enterDataUserAndPassField(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2101829315,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter LoginLp!334 into password field on the login page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "LoginLp!334",
+                  "offset": 8
+                },
+                {
+                  "val": "password",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginSD.enterDataUserAndPassField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2082780324,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on login button on login page",
+            "match": {
+              "location": "LoginSD.pressLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5365705786,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I verify that login button is enable at Login page",
+            "match": {
+              "location": "LoginSD.verifyEnableLoginButton()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "Login Feature",
+    "description": "",
+    "id": "login-feature",
+    "keyword": "Feature",
+    "uri": "Login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@web"
+      }
+    ]
+  }
+]
